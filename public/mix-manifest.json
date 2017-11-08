@@ -1,5 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
+    "/css/iniciarPlantilla.css": "/css/iniciarPlantilla.css",
+    "/js/enviar.js": "/js/enviar.js",
     "/js/wizard.js": "/js/wizard.js"
 }

@@ -13,9 +13,9 @@
 			<thead>
 				<tr>
 					<th colspan="1"></th>
-					
+
 					<th colspan="1">
-						
+
 					</th>
 				</tr>
 			</thead>
@@ -32,9 +32,9 @@
 					<td width="10px">
 						<input type="submit" class="btn btn-primary" value="Seleccionar">
 					</td>
-					
 
-			</tbody>	
+
+			</tbody>
 		</table>
 
 

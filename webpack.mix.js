@@ -18,16 +18,12 @@ mix.scripts([
 	'resources/assets/js/toastr.js',
 	'resources/assets/js/vue.js',
 	'resources/assets/js/axios.js',//depende de vue
-
 	'resources/assets/js/sweetalert.min.js',
-
-	//basicas 
+	//basicas
 	'resources/assets/js/hover.zoom.js',
 	'resources/assets/js/hover.zoom.conf.js',
 	//'public/js/administrador/usuario.js'
 	'resources/assets/js/menu.js',
-
-
 	], 'public/js/app.js')
 
 .styles([
@@ -43,6 +39,19 @@ mix.scripts([
 ;
 
 
+//mix.scripts para compilar los eleementos de la base de sweetalert
+mix.scripts([
+	'resources/assets/css/elementoaCompilar.css',
+	'resources/assets/css/menuHeader.css',
+	'resources/assets/css/bodyPrincipal.css',
+	'resources/assets/css/footerPrincipal.css'
+], 'public/css/iniciarPlantilla.css')
+
+.styles([
+	'resources/assets/js/scriptParaCompilar.js',
+	'resources/assets/js/scriptmenu.js',
+	'resources/assets/js/scriptFooter.js'
+],'public/js/enviar.js');
 
 
 //wizard
