@@ -62,4 +62,3 @@ Route::post('psicologia-buscarElemento',['uses'=>'psicologia\PsicologiaControlle
 
 
 //rutas nuevas de Psicologia
-Route:get();
