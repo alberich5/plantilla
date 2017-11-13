@@ -23,7 +23,7 @@
 
 			<tbody>
 				<td>
-					<select required v-model="sucursal">
+					<select required v-model="sucursal" class="form-control" id="exampleFormControlSelect1">
   					<option v-for="sucursal in sucursales" v-bind:value="sucursal">
     					@{{ sucursal.nombre }}
   					</option>

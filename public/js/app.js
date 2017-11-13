@@ -24984,7 +24984,7 @@ return /******/ (function(modules) { // webpackBootstrap
             
         }); 
 
-		
+
 
 		new Vue({
 			//id asignado al div en el que funcionara vue
@@ -25007,7 +25007,7 @@ return /******/ (function(modules) { // webpackBootstrap
 					},
 			methods:{
 				getModulos:function () {
-					
+
 					var url='/menumodulos/';
 					//variable que hace referencia a la URI de la ruta
 					axios.get(url).then(response=>{
@@ -25023,14 +25023,14 @@ return /******/ (function(modules) { // webpackBootstrap
 							{
 
 						var nombre='modulo'+i;
-						
+
 						document.getElementById(nombre).style.display = 'block';
 							}
-						
-							
+
+
 						}
 						}
-					
+
 					}.bind(this), 700)
 
 
@@ -25038,15 +25038,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 				},
 
-				
+
 
 				verificar:function () {
-					
+
 					var url='/menusucursales';
 					//variable que hace referencia a la URI de la ruta
 					axios.get(url).then(response=>{
 						this.sucursales=response.data
-						//al acceder a esa ruta asignara el resultado a la variable 
+						//al acceder a esa ruta asignara el resultado a la variable
 
 					});
 					this.getModulos();
@@ -25057,12 +25057,12 @@ return /******/ (function(modules) { // webpackBootstrap
 					if(this.sucursales.length>1)
 					{
 						//jquery
-						
+
 						if(this.sucursal.id==0)
 						{
 							$('#sucursal').modal('show');
 						}
-					
+
 					}
 
 					}.bind(this), 700)
@@ -25071,15 +25071,15 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 					setSucursal:function (id) {
-					
+
 
 					var url ='/setsucursal/'+id;
-					axios.post(url,id).then(response=>{	
+					axios.post(url,id).then(response=>{
 						this.errors=[];//listado de errores
 
 						$('#sucursal').modal('hide');
-					toastr.success('Delegacion '+this.sucursal.nombre+' seleccionada con exito');//mensaje 
-					
+					toastr.success('Delegacion '+this.sucursal.nombre+' seleccionada con exito');//mensaje
+
 
 
 
@@ -25091,7 +25091,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 					});
 
-					
+
 
 
 					},
@@ -25102,22 +25102,22 @@ return /******/ (function(modules) { // webpackBootstrap
 					var url='/getsucursal/';
 					//variable que hace referencia a la URI de la ruta
 					axios.get(url).then(response=>{
-				
-						
+
+
 							this.sucursal=response.data;
-						//al acceder a esa ruta asignara el resultado a la variable 
+						//al acceder a esa ruta asignara el resultado a la variable
 					});
 
-					
-					
+
+
 				},
 
 				editSucursal:function () {
 
 					$('#sucursal').modal('show');
 
-					
-					
+
+
 				},
 	/*
 					prueba:function () {
@@ -25126,16 +25126,16 @@ return /******/ (function(modules) { // webpackBootstrap
 					//variable que hace referencia a la URI de la ruta
 					axios.get(url).then(response=>{
 					this.usuarios=response.data;
-					
+
 					});
 					alert(url);
 				}
 
 
 	*/
-				
-				
 
-				
-		
+
+
+
+
 		}});
