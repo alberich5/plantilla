@@ -8,25 +8,15 @@
 
 @section('content')
 <!-- Inicio del body del panel -->
-<div id="usuarioCRUD">
-            <div class="row" >
-              <div class="col-sm-10 col-sm-offset-1">
-                  <!--      inicio Wizard container        -->
-                  <div class="wizard-container">
-                      <div class="card wizard-card" data-color="azul" id="wizard">
-                              <center><h2>Usuarios</h2></center>
+<div id="usuarioCRUD" class="container-fluid" style="background-color:#FAF7F3;">
+        <center><h2>Usuarios</h2></center>
+    @include('administrador.usuario.partials.formulario')
+
+    @include('administrador.usuario.partials.tabla')
 
 
+</div>
 
-                  @include('administrador.usuario.partials.formulario')
-
-                  @include('administrador.usuario.partials.tabla')
-
-
-                  </div>
-                </div> <!-- fin del wizard container -->
-              </div>
-          </div> <!-- row -->
 
 
 
