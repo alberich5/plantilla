@@ -1,5 +1,9 @@
 @extends('administrador.layout')
 
+@section('css')
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+@endsection
 
 
 @section('content')
@@ -10,9 +14,8 @@
                   <!--      inicio Wizard container        -->
                   <div class="wizard-container">
                       <div class="card wizard-card" data-color="azul" id="wizard">
-                          <div class="wizard-header">
-                                    <h2>Usuarios</h2>
-                          </div>
+                              <center><h2>Usuarios</h2></center>
+
 
 
                   @include('administrador.usuario.partials.formulario')
@@ -24,6 +27,9 @@
                 </div> <!-- fin del wizard container -->
               </div>
           </div> <!-- row -->
+
+
+
 
 
  <!-- pruebas -->
@@ -47,10 +53,10 @@
 <script src="{{ asset('js/wizard.js') }}"></script>
 <script type="text/javascript">
 
-
-
-
-        new Vue({
+Vue.component('icono',{
+  template:"<i class='material-icons'><slot></slot></i>"
+});
+    var vm = new Vue({
             //id asignado al div en el que funcionara vue
             el: '#usuarioCRUD',
             //funcion al crear el objeto
@@ -59,8 +65,6 @@
                 this.getUsuarios();
                 //llamada al metodo
             },
-
-
             data:{
 
                 errors:[],
@@ -68,11 +72,7 @@
                 searchUsuario:{'username':'','nombre':'','paterno':'','materno':''},
                     },
             methods:{
-
-
                     getUsuarios:function () {
-
-
                     var url='/administrador/usuarios';
                     //variable que hace referencia a la URI de la ruta
                     axios.get(url).then(response=>{
@@ -86,12 +86,12 @@
                     {
                     var url='/administrador/usuario/search';
                     axios.post(url,{
-                        usuario:this.searchUsuario//new keep es e input
+                        usuario:this.searchUsuario
                     }).then(response=>{
                       this.usuarios=response.data;
                       this.errors=[];//listado de errores
                       this.searchUsuario={'username':'','nombre':'','paterno':'','materno':''}
-                        toastr.success('Busqueda exitosa');//mensaje
+                        toastr.success('Busqueda exitosa');//mensaje de alerta de funcion exitosa
                        alert(response.data);
                     }).catch(error=>{
                       this.errors=error.response.data
@@ -99,16 +99,6 @@
                     });
 
                 },
-
-
-
-
-
-
-
-
         }});
 </script>
-
-
 @endsection

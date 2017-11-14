@@ -3,7 +3,7 @@
         <div class="form-group">
               <label for="descripcion">Delegacion</label>
                <select name="delegacion" class="form-control selectpicker" v-model="delegacionActual" >
-                   <option v-for="sucursal in sucursales" >
+                   <option v-for="sucursal in sucursales" class="lista">
                       @{{ sucursal.nombre}}
                     </option>
                 </select>

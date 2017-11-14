@@ -14,6 +14,11 @@
 .fondoMenu{
   background-color: #E8E9EE;
 }
+/*Color de las lista depegables del proyecto*/
+.lista{
+  color: black;
+  font-size: 1em;
+}
 
 .sipab{
   margin-left: 5%;
@@ -30,7 +35,7 @@
   color: white;
 }
 
-
+/*Aliniar el texto*/
 
 
 

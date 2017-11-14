@@ -1,4 +1,4 @@
-		
+
 
 		new Vue({
 			//id asignado al div en el que funcionara vue
@@ -12,26 +12,26 @@
 
 
 			data:{
-				
+
 				errors:[],
 				usuarios:[],
 					},
 			methods:{
 
 					prueba:function () {
-					
+
 					var url='/administrador/usuario/get';
 					//variable que hace referencia a la URI de la ruta
 					axios.get(url).then(response=>{
 					this.usuarios=response.data;
-					
+
 					});
-					
+
 				}
 
-				
-				
 
-				
-		
+
+
+
+
 		}});

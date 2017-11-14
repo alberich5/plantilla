@@ -18,12 +18,14 @@
       <tbody>
         <tr v-for="usuario in usuarios">
           <td>
-          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="editKeep(keep)">H</a>
-           <a href="#" class="btm btn-danger btn-sm" v-on:click.prevent="deleteKeep(keep)">V</a>
+          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="">
+          <i class="material-icons">3d_rotation</i></a>
+
+           <a href="#" class="btm btn-danger btn-sm" v-on:click.prevent="">V</a>
 
 
 
-          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="deleteKeep(keep)">E</a>
+          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="">E</a>
 
           </td>
           <td >@{{usuario.id}}</td>

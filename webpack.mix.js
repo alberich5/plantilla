@@ -34,7 +34,6 @@ mix.scripts([
 	'resources/assets/css/sweetalert.css',
 	'resources/assets/css/toastr.css',
 	//'resources/assets/wizard/css/material-bootstrap-wizard.css',
-    'resources/assets/css/icon.css',
 	],'public/css/app.css')
 ;
 
@@ -52,8 +51,6 @@ mix.scripts([
 	'resources/assets/js/scriptmenu.js',
 	'resources/assets/js/scriptFooter.js'
 ],'public/js/enviar.js');
-
-
 //wizard
    mix.scripts([
    	'resources/assets/wizard/js/jquery.bootstrap.js',
