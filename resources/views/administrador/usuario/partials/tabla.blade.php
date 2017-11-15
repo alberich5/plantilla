@@ -18,14 +18,10 @@
       <tbody>
         <tr v-for="usuario in usuarios">
           <td>
-          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="">
-          <i class="material-icons">3d_rotation</i></a>
-
-           <a href="#" class="btm btn-danger btn-sm" v-on:click.prevent="">V</a>
-
-
-
-          <a href="#" class="btm btn-warning btn-sm" v-on:click.prevent="">E</a>
+          <a href="#"  v-on:click.prevent="">
+          <i class="material-icons">book</i></a>
+           <a href="#"  v-on:click.prevent=""><i class="material-icons">remove_red_eye</i></a></a>
+          <a href="#"  v-on:click.prevent=""><i class="material-icons">explicit</i></a>
 
           </td>
           <td >@{{usuario.id}}</td>

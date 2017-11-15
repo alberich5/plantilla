@@ -15,11 +15,14 @@
   background-color: #E8E9EE;
 }
 /*Color de las lista depegables del proyecto*/
-.lista{
-  color: black;
-  font-size: 1em;
+a .listado{
+  color: black !important;
 }
 
+
+.litado{
+  background-color: black;
+}
 .sipab{
   margin-left: 5%;
   color: white;
@@ -37,6 +40,18 @@
 
 /*Aliniar el texto*/
 
+/*Color de los iconos*/
+
+a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #3b25e6;
+  text-decoration: underline;
+}
+/*Fin de los iconos*/
 
 
 body {
@@ -2626,15 +2641,7 @@ body {
   background-color: #fff;
 }
 
-a {
-  color: #796AEE;
-  text-decoration: none;
-}
 
-a:focus, a:hover {
-  color: #3b25e6;
-  text-decoration: underline;
-}
 
 h1,
 h2,

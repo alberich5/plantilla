@@ -48,7 +48,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="{{ route('administrador.usuario.index') }}">Listar</a></li>
+                                    <li><a href="{{ route('administrador.usuario.index') }}">listar</a></li>
                                     <li><a href="{{ route('register') }}">Panel</a></li>
                                 </ul>
                                </li>

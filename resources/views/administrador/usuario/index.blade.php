@@ -8,7 +8,7 @@
 
 @section('content')
 <!-- Inicio del body del panel -->
-<div id="usuarioCRUD" class="container-fluid" style="background-color:#FAF7F3;">
+<div id="usuarioCRUD" class="container-fluid" style="background-color:;">
         <center><h2>Usuarios</h2></center>
     @include('administrador.usuario.partials.formulario')
 
@@ -16,10 +16,6 @@
 
 
 </div>
-
-
-
-
 
 
  <!-- pruebas -->
@@ -51,12 +47,10 @@ Vue.component('icono',{
             el: '#usuarioCRUD',
             //funcion al crear el objeto
             created:function(){
-
                 this.getUsuarios();
                 //llamada al metodo
             },
             data:{
-
                 errors:[],
                 usuarios:[],
                 searchUsuario:{'username':'','nombre':'','paterno':'','materno':''},
@@ -67,11 +61,8 @@ Vue.component('icono',{
                     //variable que hace referencia a la URI de la ruta
                     axios.get(url).then(response=>{
                     this.usuarios=response.data;
-
                     });
-
                 },
-
                     busquedaUsuario:function()
                     {
                     var url='/administrador/usuario/search';
