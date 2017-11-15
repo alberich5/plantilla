@@ -19,9 +19,9 @@
         <tr v-for="usuario in usuarios">
           <td>
           <a href="#"  v-on:click.prevent="">
-          <i class="material-icons">book</i></a>
-           <a href="#"  v-on:click.prevent=""><i class="material-icons">remove_red_eye</i></a></a>
-          <a href="#"  v-on:click.prevent=""><i class="material-icons">explicit</i></a>
+          <icono>book</icono></a>
+           <a href="#"  v-on:click.prevent=""><icono>remove_red_eye</icono></a></a>
+          <a href="#"  v-on:click.prevent=""><icono>explicit</icono></a>
 
           </td>
           <td >@{{usuario.id}}</td>

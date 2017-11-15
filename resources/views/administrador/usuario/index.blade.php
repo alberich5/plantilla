@@ -15,7 +15,7 @@
     @include('administrador.usuario.partials.tabla')
 
 
-</div>
+
 
 
  <!-- pruebas -->
@@ -36,8 +36,8 @@
 @section('js')
 <!-- INCLUYE LAS LIBRERIAS EXTERNAS DE JAVASCRIPT-->
 <script src="{{ asset('js/jquery-ui.js') }}"></script>
-<script src="{{ asset('js/wizard.js') }}"></script>
 <script type="text/javascript">
+
 
 Vue.component('icono',{
   template:"<i class='material-icons'><slot></slot></i>"
@@ -73,12 +73,10 @@ Vue.component('icono',{
                       this.errors=[];//listado de errores
                       this.searchUsuario={'username':'','nombre':'','paterno':'','materno':''}
                         toastr.success('Busqueda exitosa');//mensaje de alerta de funcion exitosa
-                       alert(response.data);
+                        toastr.info(response.data);//mensaje de alerta de funcion exitosa
                     }).catch(error=>{
                       this.errors=error.response.data
-
                     });
-
                 },
         }});
 </script>

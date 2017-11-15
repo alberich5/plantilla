@@ -1,12 +1,7 @@
-/*
-=========================================
-=========================================
 
-=========================================
-========================================= */
 /*
 * ==========================================================
-*     GENERAL STYLES
+*     EStilos generales de la plantilla                    *
 * ==========================================================
 */
 
@@ -39,11 +34,10 @@ a .listado{
 }
 
 /*Aliniar el texto*/
-
 /*Color de los iconos*/
 
 a {
-  color: #ff9800;
+  color: #0b0b13;
   text-decoration: none;
 }
 
@@ -52,6 +46,12 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 /*Fin de los iconos*/
+
+/*Cambiar el color de select*/
+.selecionar{
+  color: black;
+  background-color: #d8d8ef !important;
+}
 
 
 body {

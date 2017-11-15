@@ -95,9 +95,8 @@
 
     </div>
 
-    <!-- Scripts -->
-
-    <script src="{{ asset('js/app.js') }}"></script>
+    <!-- Scripts para Administrador -->
+    <script src="{{ asset('js/administrador/app2.js') }}"></script>
     @yield('js')
 </body>
 </html>

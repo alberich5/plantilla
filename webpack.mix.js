@@ -23,18 +23,9 @@ mix.scripts([
 	'resources/assets/js/hover.zoom.js',
 	'resources/assets/js/hover.zoom.conf.js',
 	//'public/js/administrador/usuario.js'
-	'resources/assets/js/menu.js',
-	], 'public/js/app.js')
+	//'resources/assets/js/menu.js',
+], 'public/js/administrador/app2.js')
 
-.styles([
-	'resources/assets/css/app.css',
-	'resources/assets/css/bootstrap.css',
-	'resources/assets/css/main.css',
-	//'resources/assets/css/freelancer.css',
-	'resources/assets/css/sweetalert.css',
-	'resources/assets/css/toastr.css',
-	//'resources/assets/wizard/css/material-bootstrap-wizard.css',
-	],'public/css/app.css')
 ;
 
 
