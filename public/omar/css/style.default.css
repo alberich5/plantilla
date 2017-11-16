@@ -23,7 +23,7 @@ a .listado{
   color: white;
   font-weight: bold;
   font-size: 2em;
-  margin-top: 50%:
+  margin-top: 17% !important;
   text-decoration-style: none;
 }
 .sipab:hover{
@@ -52,6 +52,32 @@ a:focus, a:hover {
   color: black;
   background-color: #d8d8ef !important;
 }
+
+
+/*cambois del contenedor de formulario*/
+.formulario{
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/*Cambio del tamaño de letra*/
+h2,
+.h2 {
+  font-size: 2em;
+}
+
+
+/*Estilo del contenedor para las base de la pantilla de administrador*/
+
+.contenedorBase{
+  background-color:white;
+
+}
+
+/**/
+
+
+
 
 
 body {
@@ -2667,10 +2693,7 @@ h1,
   font-size: 1.5rem;
 }
 
-h2,
-.h2 {
-  font-size: 1.3rem;
-}
+
 
 h3,
 .h3 {

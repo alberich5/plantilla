@@ -8,15 +8,15 @@
 
 @section('content')
 <!-- Inicio del body del panel -->
-<div id="usuarioCRUD" class="container-fluid" style="background-color:;">
+<div id="usuarioCRUD" class="container-fluid">
         <center><h2>Usuarios</h2></center>
-    @include('administrador.usuario.partials.formulario')
+        <div class="formulario">
+            @include('administrador.usuario.partials.formulario')
+        </div>
 
-    @include('administrador.usuario.partials.tabla')
-
-
-
-
+    <div class="tabla">
+      @include('administrador.usuario.partials.tabla')
+    </div>
 
  <!-- pruebas -->
          <div class="row">
@@ -26,8 +26,6 @@
           </div>
 <!-- fin de pruebas -->
 
-
-
 </div>
 
 <!-- Fin del body del panel -->
@@ -35,13 +33,12 @@
 @endsection
 @section('js')
 <!-- INCLUYE LAS LIBRERIAS EXTERNAS DE JAVASCRIPT-->
-<script src="{{ asset('js/jquery-ui.js') }}"></script>
 <script type="text/javascript">
-
-
 Vue.component('icono',{
   template:"<i class='material-icons'><slot></slot></i>"
 });
+
+
     var vm = new Vue({
             //id asignado al div en el que funcionara vue
             el: '#usuarioCRUD',

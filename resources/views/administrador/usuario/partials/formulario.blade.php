@@ -13,7 +13,6 @@
     </div>
 
 
-
     <div class="row">
         <div class=" col-sm-6  form-group ">
             <div class=" input-group col-md-8 col-md-offset-1">
@@ -47,7 +46,6 @@
         </div>
     </div>
 
-
     <div class="row">
         <div class=" col-sm-6 form-group">
             <div class=" input-group col-md-8">
@@ -62,7 +60,6 @@
     <div class="row col-sm-offset-1">
             <input type="submit" class="btn btn-primary" value="BUSCAR">
     </div>
-
   </div><!--      FORM BUSQ      -->
 
   </form>

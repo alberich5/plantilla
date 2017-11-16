@@ -12,7 +12,6 @@
 
     <!-- Styles -->
        <!-- Styles -->
-
      <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
      <link href="{{asset('wizard/css/material-bootstrap-wizard.css')}}" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="{{ asset('omar/css/style.default.css') }}" id="theme-stylesheet">
@@ -20,11 +19,10 @@
 
    </head>
 <body>
-    <div id="app">
+    <div id="app" class="contenedorBase">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-
                     <!-- Collapsed Hamburger -->
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
                         <span class="sr-only">Toggle Navigaiont</span>
@@ -34,7 +32,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="sipab" href="{{ url('/') }}">
+                    <a class="sipab" href="{{ url('/') }}" >
                         {{ config('app.username', 'SIPAB') }}
                     </a>
                 </div>
@@ -43,7 +41,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                                <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="tamanolistado">
                                     Usuario <span class="caret"></span>
                                 </a>
 
@@ -52,6 +50,107 @@
                                     <li><a href="{{ route('register') }}">Panel</a></li>
                                 </ul>
                                </li>
+                <!--Son los valores de prueba para ver la catidad de pestañas que caben aqui-->
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba1 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba1</a></li>
+                                   <li><a href="">prueba1</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba2 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba2</a></li>
+                                   <li><a href="">prueba2</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba3 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba3</a></li>
+                                   <li><a href="">prueba3</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba4 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba4</a></li>
+                                   <li><a href="">prueba4</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba5 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba5</a></li>
+                                   <li><a href="">prueba5</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba6 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba6</a></li>
+                                   <li><a href="">prueba6</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba7 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba7</a></li>
+                                   <li><a href="">prueba7</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba8 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba8</a></li>
+                                   <li><a href="">prueba8</a></li>
+                               </ul>
+                              </li>
+
+                              <li class="dropdown">
+                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                   Prueba9 <span class="caret"></span>
+                               </a>
+
+                               <ul class="dropdown-menu" role="menu">
+                                   <li><a href="">prueba9</a></li>
+                                   <li><a href="">prueba9</a></li>
+                               </ul>
+                              </li>
+
+                <!--Aqui terminan los valores de prueba-->
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -85,6 +184,7 @@
                 </div>
             </div>
         </nav>
+        <hr>
 
         <div class="container fondoMenu">
 
