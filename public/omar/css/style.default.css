@@ -7,8 +7,14 @@
 
 
 .fondoMenu{
-  background-color: #E8E9EE;
+  background-color: white;
 }
+#contenedorMenu{
+  margin-top: 2%;
+  background-color: #f5f9fd;
+  box-shadow: -4px -2px 44px 0px rgba(171,94,171,0.7);
+}
+
 /*Color de las lista depegables del proyecto*/
 a .listado{
   color: black !important;
@@ -68,13 +74,22 @@ h2,
 
 
 /*Estilo del contenedor para las base de la pantilla de administrador*/
-
 .contenedorBase{
   background-color:white;
 
 }
-
 /**/
+
+/*cambia el la cabecra del modal*/
+#cabeceraModal{
+  background-color:#2C253E !important;
+  font-size: 1.5em !important;
+  color: white;
+}
+#botonSucursal{
+  font-size: 1.2em !important;
+  margin-left: 15%;
+}
 
 
 

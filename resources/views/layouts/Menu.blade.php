@@ -13,9 +13,6 @@
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('omar/css/style.default.css') }}" id="theme-stylesheet">
     @yield('css')
-
-
-
    </head>
 <body>
     <div id="app" class="fondoMenu">
