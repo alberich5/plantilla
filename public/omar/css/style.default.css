@@ -15,6 +15,12 @@
   box-shadow: -4px -2px 44px 0px rgba(171,94,171,0.7);
 }
 
+.contenedorAdmin{
+  margin-top: 2%;
+  background-color: #f5f9fd;
+  box-shadow: -4px -2px 44px 0px rgba(171,94,171,0.7);
+}
+
 /*Color de las lista depegables del proyecto*/
 a .listado{
   color: black !important;
@@ -90,6 +96,39 @@ h2,
   font-size: 1.2em !important;
   margin-left: 15%;
 }
+
+/*Colores de separacion de los elementos de los divs*/
+
+.tabla{
+  background: #d6fbe7;
+  padding: 5px;
+  border-radius: 7px;
+  box-shadow: -4px -2px 44px -8px rgba(181,196,187,1);
+
+}
+
+.formulario{
+    border-radius: 7px;
+    padding-left: 5%;
+      margin-bottom: 1%;
+  box-shadow: -4px -2px 44px 6px rgba(217,245,247,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -852,9 +891,10 @@ nav.navbar .dropdown-menu {
 
 nav.navbar .dropdown-menu a {
   background: #fff;
-  padding: 10px 20px;
+  padding: 3px;
   font-size: 0.8em;
-  color: blue;
+  color: #171222;
+  font-weight: bold;
   width: 100%;
 }
 
@@ -2185,13 +2225,13 @@ STYLE SWITCHER FOR DEMO
 
 .btn-primary {
   color: #fff;
-  background-color: #03134e;
+  background-color: #19285E;
   border-color: #796AEE;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2b17cf !important; /*Aqui se cambio el color de hover de boton principal*/
+  background-color: #03134e !important; /*Aqui se cambio el color de hover de boton principal*/
   border-color: #503ce9;
 }
 

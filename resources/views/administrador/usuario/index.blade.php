@@ -8,13 +8,13 @@
 
 @section('content')
 <!-- Inicio del body del panel -->
-<div id="usuarioCRUD" class="container-fluid" style="background-color:#f5f9fd;box-shadow: -4px -2px 44px 0px rgba(171,94,171,0.7);"> 
+<div id="usuarioCRUD" class="container-fluid" style="background-color:#f5f9fd;box-shadow: -4px -2px 44px 0px rgba(171,94,171,0.7);">
         <center><h2>Usuarios</h2></center>
         <div class="formulario">
             @include('administrador.usuario.partials.formulario')
         </div>
 
-    <div class="tabla">
+    <div class="tabla" >
       @include('administrador.usuario.partials.tabla')
     </div>
 
