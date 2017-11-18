@@ -1,6 +1,7 @@
 @extends('administrador.layout')
 
 @section('css')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 @endsection
@@ -33,7 +34,12 @@
 @endsection
 @section('js')
 <!-- INCLUYE LAS LIBRERIAS EXTERNAS DE JAVASCRIPT-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.3/js/bootstrap-datetimepicker.min.js"></script>
+
 <script type="text/javascript">
+
+
 Vue.component('icono',{
   template:"<i class='material-icons'><slot></slot></i>"
 });

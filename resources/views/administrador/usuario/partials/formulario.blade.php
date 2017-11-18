@@ -59,6 +59,7 @@
     <div class="row col-sm-offset-1">
             <input type="submit" class="btn btn-primary" value="BUSCAR">
     </div>
-  </div><!--      FORM BUSQ      -->
+  </div>
+  <!--es la parte final del documento-->
 
   </form>
