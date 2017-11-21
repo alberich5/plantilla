@@ -12726,6 +12726,7 @@ if (typeof jQuery === 'undefined') {
             var toastType = {
                 error: 'error',
                 info: 'info',
+								eliminar: 'eliminar',
                 success: 'success',
                 warning: 'warning'
             };

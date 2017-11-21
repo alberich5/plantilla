@@ -101,7 +101,7 @@ Vue.component('icono',{
                     });
                 },
                 mostrarEliminar:function(){
-                    toastr.success('Eliminado');
+                    toastr.eliminar('Eliminado');
                 },
                 mostrarCancelar:function(){
                     toastr.success('Eliminado');
