@@ -58,7 +58,15 @@
     </div>
 
     <div class="row col-sm-offset-1">
-            <input type="submit" class="btn btn-primary" value="BUSCAR">
+            <input type="submit" class="btn btn-primary btn-sm"  id="buscar" title="Buscar Elemento" value="BUSCAR">
+
+            <input type="submit" class="btn btn-aceptar btn-sm" id="agregar" title="Aceptar" value="agregar">
+            <input type="submit" class="btn btn-editar btn-sm" id="editar" title="Editar" value="editar">
+            <input type="submit" class="btn btn-editar2 btn-sm " id="editar2" title="Editar2" value="editar">
+            <input type="submit" class="btn btn-ver btn-sm" id="ver" title="Ver" value="ver">
+            <input type="submit" class="btn btn-cancelar btn-sm" id="cancelar" title="cancelar" value="cancelar">
+            <input type="submit" class="btn btn-eliminar btn-sm" id="eliminar" title="eliminar" value="eliminar" v-on:click.prevent="mostrarEliminar()">
+            <input type="submit" class="btn btn-guardar btn-sm" id="guardar" title="guardar" value="guardar">
     </div>
   </div>
   <!--es la parte final del documento-->

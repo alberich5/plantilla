@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="{{asset('css/mui/mui.css')}}">
-    <link rel="stylesheet" href="static/style.css">
     <script src="//cdn.muicss.com/mui-latest/extra/mui-combined.min.js"></script>
   </head>
   <body>

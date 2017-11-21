@@ -7,7 +7,7 @@
 
 
 .fondoMenu{
-  background-color: white;
+
 }
 #contenedorMenu{
   margin-top: 2%;
@@ -79,10 +79,15 @@ h2,
 }
 
 
-/*Estilo del contenedor para las base de la pantilla de administrador*/
+/*Estilo del contenedor para las base de la pantilla de administrador
+y cambiar el fondo de pantalla
+*/
 .contenedorBase{
   background-color:white;
-
+  background-image: url('pabic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 /**/
 
@@ -115,10 +120,36 @@ h2,
 }
 
 
+/*Botonera de elementos de pantalla*/
 
+.btn.btn-aceptar{
+  background-color: #2e7d32;
+}
+.btn.btn-eliminar{
+  background-color: #dd2c00;
+}
 
+.btn.btn-guardar{
+  background-color: #01579b;
+}
 
+.btn.btn-cancelar{
+  background-color: #f57c00;
+}
+.btn.btn-editar{
+  background-color: #999933;
+}
+.btn.btn-editar2{
+  background-color: #880e4f;
+}
 
+.btn.btn-ver{
+  background-color: #29b6f6;
+}
+
+/*Fin de la botonera de pantalla*/
+
+/*cambio de colores de toastr*/
 
 
 
@@ -179,10 +210,21 @@ header.page-header {
   padding: 20px 0;
 }
 
+
+
+
+
+/*cambiar las propiedades de la tabla de busqueda*/
 table {
-  font-size: 0.9em;
+  font-size: 1.3em;
   color: #666;
 }
+/*Fin de los cambios de las tablas*/
+
+
+
+
+
 
 .card-close {
   position: absolute;
