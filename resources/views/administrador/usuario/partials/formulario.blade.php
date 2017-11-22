@@ -4,10 +4,13 @@
     <div class="row">
         <div class=" col-sm-6 form-group">
             <div class=" input-group col-md-8">
-                <span class="input-group-addon" id="basic-addon1">
-                  <i class="material-icons md-18">person</i>
-                </span>
-                <input id="nombre" type="nombre" class="form-control" name="nombre" value=""  autofocus placeholder="Nombre" aria-describedby="basic-addon1" style="text-transform:uppercase;" v-model="searchUsuario.nombre" >
+
+                <div class="group">
+                  <input type="text"  id="campoFormulario" name="nombre" value="" style="text-transform:uppercase;" v-model="searchUsuario.nombre">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label><icono>person</icono> Nombre</label>
+                </div>
            </div>
         </div>
     </div>
@@ -24,13 +27,18 @@
         </div>
     </div>
 
+
+
     <div class="row">
         <div class=" col-sm-6 form-group">
             <div class=" input-group col-md-8">
-                <span class="input-group-addon" id="basic-addon1">
-                  <i class="material-icons md-18">person</i>
-                </span>
-                <input id="nombre" type="nombre" class="form-control" name="nombre" value=""  autofocus placeholder="Nombre" aria-describedby="basic-addon1" style="text-transform:uppercase;" v-model="searchUsuario.nombre" >
+                <div class="group">
+                  <input type="text"  id="campoFormulario"  name="paterno" value="" style="text-transform:uppercase;" v-model="searchUsuario.paterno">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label><icono>person</icono> Apellido paterno</label>
+                </div>
+
            </div>
         </div>
     </div>
@@ -38,21 +46,14 @@
     <div class="row">
         <div class=" col-sm-6 form-group">
             <div class=" input-group col-md-8">
-                <span class="input-group-addon" id="basic-addon1">
-                  <i class="material-icons md-18">person</i>
-                </span>
-                <input id="paterno" type="paterno" class="form-control" name="paterno" value=""  autofocus placeholder="Apellido paterno" aria-describedby="basic-addon1" style="text-transform:uppercase;"  v-model="searchUsuario.paterno">
-           </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class=" col-sm-6 form-group">
-            <div class=" input-group col-md-8">
-                <span class="input-group-addon" id="basic-addon1">
-                  <i class="material-icons md-18">person</i>
-                </span>
-                <input id="materno" type="materno" class="form-control" name="materno" value=""  autofocus placeholder="Apellido materno" aria-describedby="basic-addon1" style="text-transform:uppercase;"  v-model="searchUsuario.materno" >
+                <div class="group">
+                  <input type="text"  id="campoFormulario"  name="materno" value="" style="text-transform:uppercase;" v-model="searchUsuario.materno">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label><icono>person</icono> Apellido materno</label>
+                </div>
+
            </div>
         </div>
     </div>
