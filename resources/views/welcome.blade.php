@@ -15,7 +15,7 @@
       <div class="mui-container">
         <table>
           <tr class="mui--appbar-height">
-            <td class="mui--text-title">SIPAB</td>
+            <td class="mui--text-title inicio" style=" width:100%; text-align: right;text-decoration: none;"><a href="{{ route('login') }}">SIPAB</a></td>
             <td class="mui--text-right">
               <ul class="mui-list--inline mui--text-body2">
               </ul>

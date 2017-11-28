@@ -44,6 +44,13 @@ a .listado{
 .letras{
   color: white;
 }
+.letras2{
+
+text-align: right;
+  width: 920px !important;
+  font-size: 1.3em;
+  
+}
 
 /*Aliniar el texto*/
 /*Color de los iconos*/
@@ -751,8 +758,9 @@ nav.side-navbar.shrinked .sidebar-header .title {
 *     MAIN NAVBAR
 * ==========================================================
 */
+
 nav.navbar {
-  background: #171333;
+  background: #003E6E;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;

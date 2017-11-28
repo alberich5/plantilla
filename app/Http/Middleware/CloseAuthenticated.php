@@ -38,6 +38,6 @@ class CloseAuthenticated
             return $next($request);
         }
         //
-        
+
     }
 }

@@ -17,6 +17,7 @@
 <body>
     <div id="app" class="fondoMenu">
         <nav class="navbar navbar-default navbar-static-top">
+
             <div class="container">
                 <div class="navbar-header">
 
@@ -30,11 +31,13 @@
 
                     <!-- Branding Image -->
                     <a class="sipab" href="{{ url('/') }}">
-                        {{ config('app.username', 'SIPAB') }}
+
                     </a>
+
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                  <!--<center><h2>POLICIA AUXILIAR BANCARIA INDUSTRIAL Y COMERCIAL</h2><center>-->
                     <!-- Left Side Of Navbar -->
                     <ul  class="nav navbar-nav">
 
@@ -43,12 +46,25 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-left">
+                      <li class="letras2" style="background: ;  ">
+
+                          <h2>  POLICIA AUXILIAR BANCARIA INDUSTRIAL Y COMERCIAL </h2>
+
+
+                      </li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
+
+                       <h2></h2>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ route('login') }}">Iniciar sesion</a></li>
                             <li><a href="{{ route('register') }}">Registrar</a></li>
                         @else
+
+
+
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->username }} <span class="caret"></span>
@@ -75,12 +91,18 @@
                                 </ul>
                             </li>
                         @endif
+                      <!--  <img src="{{ asset('/img/uno.png') }}" class="img-responsive" width="50" height="50">-->
+
+
+
                     </ul>
                 </div>
             </div>
         </nav>
+
         @yield('content')
     </div>
+
 
     <!-- Scripts -->
 
