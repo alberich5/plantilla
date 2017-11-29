@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="{{asset('css/mui/mui.css')}}">
     <script src="//cdn.muicss.com/mui-latest/extra/mui-combined.min.js"></script>
   </head>
-  <body>
+  <body id="welcome">
     <header class="mui-appbar mui--z1">
       <div class="mui-container">
         <table>
           <tr class="mui--appbar-height">
-            <td class="mui--text-title inicio" style=" width:100%; text-align: right;text-decoration: none;"><a href="{{ route('login') }}">SIPAB</a></td>
+            <td class="mui--text-title inicio" style=" width:100%; text-align: right;text-decoration: none; color:white;"><a href="{{ route('login') }}">SIPAB</a></td>
             <td class="mui--text-right">
               <ul class="mui-list--inline mui--text-body2">
               </ul>
@@ -30,8 +30,8 @@
       <br>
       <div class="mui--text-display3 row wow zoomInDown">Bienvenido al Nuevo Sistema</div>
       <br>
-      <br>
-      <a href="{{ route('login') }}"> <button class="mui-btn mui-btn--raised">Entrar</button></a>
+      
+      
       <br>
       <br>
       <i class="fa fa-university fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>

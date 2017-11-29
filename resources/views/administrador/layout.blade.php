@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'SIPAB') }}</title>
+    <title>Administrador</title>
 
     <!-- Styles -->
        <!-- Styles -->
@@ -41,7 +41,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                                <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="tamanolistado">
+                                <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false" id="tamanolistado">
                                     Usuario <span class="caret"></span>
                                 </a>
 
@@ -52,7 +52,7 @@
                                </li>
                 <!--Son los valores de prueba para ver la catidad de pestañas que caben aqui-->
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba1 <span class="caret"></span>
                                </a>
 
@@ -62,7 +62,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba2 <span class="caret"></span>
                                </a>
 
@@ -72,7 +72,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba3 <span class="caret"></span>
                                </a>
 
@@ -82,7 +82,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba4 <span class="caret"></span>
                                </a>
 
@@ -92,7 +92,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba5 <span class="caret"></span>
                                </a>
 
@@ -102,7 +102,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba6 <span class="caret"></span>
                                </a>
 
@@ -112,7 +112,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba7 <span class="caret"></span>
                                </a>
 
@@ -122,7 +122,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba8 <span class="caret"></span>
                                </a>
 
@@ -132,7 +132,7 @@
                               </li>
 
                               <li class="dropdown">
-                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                               <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                    Prueba9 <span class="caret"></span>
                                </a>
 
@@ -152,7 +152,7 @@
                             <li><a href="{{ route('register') }}">Registrar</a></li>
                         @else
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle letras" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->username }} <span class="caret"></span>
                                 </a>
 
@@ -177,7 +177,7 @@
         </nav>
         <hr>
 
-        <div class="container fondoMenu">
+        <div class="container ">
 
             @yield('content')
         </div>

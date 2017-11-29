@@ -6,7 +6,9 @@
 
 @section('content')
 
-<h1> INDEX admin</h1>
+<div id="indexAdministrador">
+	
+</div>
 
 @endsection
 

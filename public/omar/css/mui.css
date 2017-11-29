@@ -13,33 +13,6 @@
  */
 /* Document
    ========================================================================== */
-
-
-
-
-/*
-* ==========================================================
-*     FONDO DEL MENU WELCOME                    *
-* ==========================================================
-*/
-
-
-
-#welcome{
-   background-image: url("../../img/prueba2.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size:100% 100%;
-}
-
-
-
-
-
-
-
-
-
 html {
   font-family: sans-serif;
   /* 1 */
@@ -497,14 +470,9 @@ body {
   background-color: #FFF;
 }
 
-/*
-* ==========================================================
-*     Estilo de etiqueta A                  *
-* ==========================================================
-*/
 a {
-  color: white;
-  text-decoration: none !important;
+  color: #2196F3;
+  text-decoration: none;
 }
 
 a:hover, a:focus {

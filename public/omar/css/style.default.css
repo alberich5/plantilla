@@ -5,8 +5,15 @@
 * ==========================================================
 */
 
+#inicio{
+  width:100% !important; 
+  text-align: right  !important;
+  text-decoration: none !important;
+}
 
 .fondoMenu{
+  background-image: url("../../img/prueba1.jpg");
+  background-attachment: fixed;
 
 }
 #contenedorMenu{
@@ -44,6 +51,11 @@ a .listado{
 .letras{
   color: white;
 }
+/*cambiarle le color de trancicion de letras*/
+.letras:hover{
+  color: #A8D6DE !important;
+}
+
 .letras2{
 
 text-align: right;
@@ -89,6 +101,11 @@ h2,
 /*Estilo del contenedor para las base de la pantilla de administrador
 y cambiar el fondo de pantalla
 */
+/*
+* ==========================================================
+*     CONFIGURACIONES DE FONDO DE LA IMAGEN DE PABIC
+* ==========================================================
+*/
 .contenedorBase{
   background-color:white;
   background-image: url('pabic.jpg');
@@ -97,6 +114,14 @@ y cambiar el fondo de pantalla
   background-position: center center;
 }
 /**/
+
+#indexAdministrador{
+
+  width: 500px;
+  height: 600px;
+}
+
+
 
 /*cambia el la cabecra del modal*/
 #cabeceraModal{
@@ -1988,7 +2013,7 @@ section.forms .line {
 
 /*
 * ==========================================================
-*     LOGIN PAGE
+*     CONFIGURACIONES DE LA PAGINA DE LOGIN
 * ==========================================================
 */
 .login-page {
@@ -2035,12 +2060,27 @@ section.forms .line {
   padding: 0;
 }
 
-/*Cambia el fondo del login de la plantilla */
+
+
+
+
+/*
+* ==========================================================
+*     CONFIGURACIONES DEL COLOR DE FONDO DE LOGIN
+* ==========================================================
+*/
 
 .login-page .form-holder .info {
   background: #03134e;
   color: #fff;
 }
+
+
+
+
+
+
+
 
 
 /*Esta es la parte de cofigo que se modifica para que cambie de color*/
@@ -3227,4 +3267,78 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
 	from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
+}
+
+
+
+
+
+/*
+* ==========================================================
+*     TOLTIPS PERSONALIZADOS                   *
+* ==========================================================
+*/
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the elementos */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #8e55ff;
+  font-weight:bold;
+  color: white;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  opacity: 0.4;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }

@@ -56,6 +56,8 @@ $(document).ready(function(){
     });
     $("#guardar").tooltip({
     });
+    $("#mostrar").tooltip({
+    });
 });
 
 
@@ -101,7 +103,27 @@ Vue.component('icono',{
                     });
                 },
                 mostrarEliminar:function(){
-                    toastr.eliminar('Eliminado');
+                    swal({
+                      title: "Are you sure?",
+                      text: "Your will not be able to recover this imaginary file!",
+                      type: "warning",
+                      showCancelButton: true,
+                      confirmButtonClass: "btn-danger",
+                      confirmButtonText: "Yes, delete it!",
+                      closeOnConfirm: false
+                    },
+                    function(){
+                      swal("Deleted!", "Your imaginary file has been deleted.", "danger");
+                    });
+                },
+                mostrarAgregar:function(){
+                    swal({
+                      position: 'top-right',
+                      type: 'success',
+                      title: 'Se Ha Guardado',
+                      showConfirmButton: true,
+                      timer: 2500
+                    });
                 },
                 mostrarCancelar:function(){
                     toastr.success('Eliminado');
