@@ -7,6 +7,7 @@
     <title>SIPAB</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('omar/css/propio.css')}}">
     <link rel="stylesheet" href="{{asset('css/mui/mui.css')}}">
     <script src="//cdn.muicss.com/mui-latest/extra/mui-combined.min.js"></script>
   </head>
@@ -35,7 +36,12 @@
       
       <br>
       <br>
-      <i class="fa fa-university fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+      <center>
+      <div class="wrapper">
+       <i class="fa fa-university fa-5x mui--color-pink-A100 mui--text-display3 row wow zoomIn" aria-hidden="true"></i>
+       <div class="tooltip">ver</div>
+      </div>
+      <center>
     </div>
     <footer>
       <div class="mui-container mui--text-center mui--text-bottom">
