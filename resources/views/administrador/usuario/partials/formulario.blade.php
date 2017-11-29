@@ -6,7 +6,7 @@
             <div class=" input-group col-md-8">
 
                 <div class="group">
-                  <input type="text"  id="campoFormulario" name="nombre" value="" style="text-transform:uppercase;" v-model="searchUsuario.nombre">
+                  <input type="text"  id="campoFormulario" name="nombre" value="" style="text-transform:uppercase; font-size: 1.3em;" v-model="searchUsuario.nombre">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label><icono>person</icono> Nombre</label>
@@ -21,7 +21,7 @@
             <div class=" input-group col-md-8">
 
                 <div class="group date">
-                  <input type="text"  id="campoFormulario" name="fecha" value="" style="text-transform:uppercase;" v-model="fecha">
+                  <input type="text"  id="campoFormulario" name="fecha" value="" style="text-transform:uppercase;font-size: 1.3em;" v-model="fecha">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label><icono>person</icono> Calendario</label>
@@ -36,7 +36,7 @@
         <div class=" col-sm-6 form-group">
             <div class=" input-group col-md-8">
                 <div class="group">
-                  <input type="text"  id="campoFormulario"  name="paterno" value="" style="text-transform:uppercase;" v-model="searchUsuario.paterno">
+                  <input type="text"  id="campoFormulario"  name="paterno" value="" style="text-transform:uppercase;font-size: 1.3em;" v-model="searchUsuario.paterno">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label><icono>person</icono> Apellido paterno</label>
@@ -54,7 +54,7 @@
             <div class=" input-group col-md-8">
 
                 <div class="group">
-                  <input type="text"  id="campoFormulario"  name="materno" value="" style="text-transform:uppercase;" v-model="searchUsuario.materno">
+                  <input type="text"  id="campoFormulario"  name="materno" value="" style="text-transform:uppercase;font-size: 1.3em;" v-model="searchUsuario.materno">
                   <span class="highlight"></span>
                   <span class="bar"></span>
                   <label><icono>person</icono> Apellido materno</label>
