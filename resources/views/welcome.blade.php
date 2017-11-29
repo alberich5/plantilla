@@ -15,7 +15,8 @@
       <div class="mui-container">
         <table>
           <tr class="mui--appbar-height">
-            <td class="mui--text-title inicio" style=" width:100%; text-align: right;text-decoration: none; color:white;"><a href="{{ route('login') }}">SIPAB</a></td>
+            <td class="mui--text-title inicio" style=" width:100%;text-decoration: none; color:white;"><a href="" style="">SIPAB</a></td>
+              <a href="{{ route('login') }}" style="float: right; font-size: 1.4em; margin-top: 1.8%;">Inicio Sesion</a></td>
             <td class="mui--text-right">
               <ul class="mui-list--inline mui--text-body2">
               </ul>
@@ -28,7 +29,7 @@
       <div class="mui--appbar-height"></div>
       <br>
       <br>
-      <div class="mui--text-display3 row wow zoomInDown">Bienvenido al Nuevo Sistema</div>
+      <div class="mui--text-display3 row wow zoomInDown">Aqui va el Texto</div>
       <br>
       
       
